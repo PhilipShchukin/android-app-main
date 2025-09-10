@@ -1,0 +1,9 @@
+node_modules
+build
+dist
+.next
+android/
+*.min.js
+package-lock.json
+public/workbox-*.js
+public/sw.js 

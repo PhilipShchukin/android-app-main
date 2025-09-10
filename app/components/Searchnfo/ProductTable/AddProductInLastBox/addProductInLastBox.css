@@ -1,0 +1,13 @@
+.hand-work-product-search-result {
+    margin: 5px auto;
+    padding: 10px;
+    border: 1px solid black;
+    max-width: 280px;
+    text-align: center;
+    background-color: #f9f9f9;
+    min-height: 50px;
+
+    code {
+        margin: 0;
+    }
+}

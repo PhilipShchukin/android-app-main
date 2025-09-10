@@ -1,0 +1,128 @@
+/* InputWithTooltip.css */
+.input-with-tooltip,
+.input-file-upload {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  width: 40%;
+}
+
+.input-file-upload-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+
+  input {
+    width: 100%;
+  }
+}
+
+.tooltip-icon {
+  display: inline-block;
+  margin-left: 5px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.tooltip-icon:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  background: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.custom-file-upload {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  cursor: pointer;
+  /* background: rgb(121, 9, 9); */
+  background: linear-gradient(90deg, rgba(121, 9, 9, 0.773546918767507) 14%, rgba(0, 0, 0, 0.8211659663865546) 57%, rgba(121, 9, 9, 0.6306897759103641) 100%);
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  max-width: 120px;
+  transition: background-color 0.3s ease;
+}
+
+.custom-file-upload:hover {
+  background: linear-gradient(90deg,
+      rgba(103, 20, 20, 0.774) 14%,
+      rgba(0, 0, 0, 0.8211659663865546) 57%,
+      rgba(80, 32, 32, 0.631) 100%);
+  transform: scale(1.05);
+  /* Увеличение при наведении */
+}
+
+.custom-file-upload:active {
+  transform: scale(0.95);
+  /* Сжатие при нажатии */
+}
+
+.input-field-error,
+.date-input.error .react-datepicker__input-container input {
+  border: 1px solid red;
+}
+
+/* ----------------------DATE--------------------- */
+
+.date-input {
+  display: flex;
+  flex-direction: column;
+  /* margin-bottom: 1rem; */
+  width: 40%;
+}
+
+.date-input label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+.react-datepicker__input-container input {
+  width: calc(100% - 5px);
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.react-datepicker__input-container input:focus {
+  border-color: #451114;
+  outline: none;
+  box-shadow: 0 0 5px rgba(160, 67, 67, 0.5);
+}
+
+.formatted-date {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #f4f4f4;
+}
+
+.input-setting {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  max-width: 100%;
+}
+
+.input-setting-field {
+  width: 60px;
+}

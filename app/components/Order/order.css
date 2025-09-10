@@ -1,0 +1,25 @@
+.order {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.order-button {
+  padding: 10px;
+}
+
+.order-buttons {  
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.order-buttons-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px
+}
+
+.info-text-stub {
+  height: 8px;
+}

@@ -1,0 +1,88 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.burgerButton {
+  position: fixed;
+  top: 20px;
+  left: 20px; /* Перемещаем кнопку влево */
+  z-index: 100;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  transition: transform 0.3s ease;
+}
+
+.burgerButton:hover {
+  transform: scale(1.1);
+}
+
+.menuContainer {
+  position: fixed;
+  top: 0;
+  left: -300px; /* Начальное положение за экраном слева */
+  width: 300px;
+  height: 100vh;
+  background: #ffa501;
+  opacity: 0.8;
+
+  z-index: 90;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+.menuContainer.open {
+  transform: translateX(300px); /* Сдвигаем вправо на свою ширину */
+}
+
+.menu {
+  padding: 80px 30px 30px;
+  height: 100%;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  margin-bottom: 25px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  display: block;
+  padding: 8px 0;
+}
+
+.menu a:hover {
+  color: #000;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 80;
+  backdrop-filter: blur(3px);
+}
+
+.disabledLink {
+  pointer-events: none;
+  cursor: no-drop;
+  opacity: 0.6;
+  /* Можно добавить другие стили для неактивной ссылки */
+}

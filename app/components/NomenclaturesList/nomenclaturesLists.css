@@ -1,0 +1,36 @@
+.n-list {
+  display: flex;
+  gap: 20%;
+  width: 100%;
+  h3 {
+    margin: 0;
+  }
+}
+.n-list__list,
+.n-list__content {
+  /* border: 1px solid black; */
+  padding: 10px;
+  li {
+    list-style: none;
+    color: #696969;
+    cursor: pointer;
+  }
+}
+
+.n-list__content {
+}
+
+.selected {
+  font-weight: 800;
+}
+.n-list__list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-height: 100px; 
+  overflow-y: auto; /* Добавление вертикальной полосы прокрутки */
+  scrollbar-width: thin; /* Установка ширины полосы прокрутки для Firefox */
+  li {
+    padding: 5px;
+  }
+}

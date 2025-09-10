@@ -1,0 +1,30 @@
+.toggle-switch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.toggle-switch label {
+  font-size: 14px;
+  color: #333; /* Темный цвет для текста */
+  margin-right: 10px;
+}
+
+.react-switch {
+  margin-left: 10px;
+}
+
+.react-switch-handle {
+  height: 12px !important; /* Высота ручки */
+  width: 12px !important; /* Ширина ручки */
+  top: 4px !important; /* Центрирование ручки по вертикали */
+}
+
+.react-switch.checked .react-switch-bg {
+  background: linear-gradient(45deg, red, black, red) !important; /* Градиент красно-черно-красный по диагонали для включенного состояния */
+}
+
+.react-switch.unchecked .react-switch-bg {
+  background: #ccc !important; /* Серый цвет для выключенного состояния */
+}

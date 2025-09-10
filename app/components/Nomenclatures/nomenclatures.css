@@ -1,0 +1,17 @@
+.nomenclatures {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.nomenclatures-buttton {
+  min-width: 30%;
+}
+
+.nomenclatures-button {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
